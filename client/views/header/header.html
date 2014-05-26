@@ -1,10 +1,19 @@
 <template name="header">
+{{#if currentUser}}
+		
+	{{> navigation }}
+
+{{else}}
+
     <div class="center aligned header-wrapper">
         <h1 class="huge center aligned ui header">
-            Boilerplate
+            Social Network Boilerplate
         </h1>
-        <p>{{>loginButtons}}</p>
+        <div class="item">
+        	<div class="ui button">{{>loginButtons}}</div>
+        </div>
         <button class="basic ui resize icon button"><i class="angle up icon"></i></button>
     </div>
+    
+ {{/if}}
 </template>
-

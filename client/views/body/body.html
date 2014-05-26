@@ -1,0 +1,18 @@
+<template name="body">
+{{#if currentUser}}
+
+
+        <div class="span2">
+            {{>sidebar}}
+        </div>
+
+{{else}}            
+      
+        <div class="span10">
+             {{>yield}}  
+            
+        </div>
+{{/if}}
+</template>
+
+

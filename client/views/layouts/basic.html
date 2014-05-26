@@ -2,24 +2,15 @@
     <header>
         {{> yield region='header'}}
     </header>
-    
-<!-- If user is loged in -->
-        <div class="row">
-            {{#if currentUser}}
-            {{> navigation }}
-            <div class="span2">
-                {{>sidebar}}
-            </div>
+{{#if currentUser}}
+            
+    {{>sidebar}}
 
-<!-- If user is NOT loged in -->
-            {{/if}}
-
-
-            <div class="span10">
-                {{>yield}}  
-            </div>
-        </div>
-
+{{else}}
+            
+    {{>yield}}  
+            
+{{/if}}
     <footer>
         {{> yield region='footer'}}
     </footer>
