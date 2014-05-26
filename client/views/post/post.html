@@ -4,18 +4,18 @@
 	    <img width="60px" src="{{owner}}.png" class="media-object" data-src="holder.js/64x64">
 	  </a>
 	  <div class="media-body">
-	    <h6>{{owner}}</h6> 
+	   <h6>{{owner}}</h6> 
 	   <p>{{text}}</p>
 	    <div class="media">
-	      	{{#if likeCount}}<span class="badge badge-success">{{likeCount}}</span>
+	      	{{#if likeCount}}<span class="ui green circular label">{{likeCount}}</span>
 		  		People Like This
 			{{/if}}
 			<h4 class="media-heading">
-				<a class="likebtn muted"><small>Like</small></a>
+				<a class="thumbs up outline icon"><small>Like</small></a>
 			</h4>
 			<ul class="unstyled">
 				{{#each postComments}}
-				{{>postcomment}}
+				  {{>postcomment}}
 				{{/each}}	
 			</ul>
 		    <input class="comment input-xxlarge" type="text" name="comment" value="" placeholder="Write a comment..." id="comment">
@@ -23,6 +23,7 @@
 	  </div>
 	</div>
 </template>
+
 <template name="postcomment">
 	<li class="well">
 		<a class="pull-left" href="/user">

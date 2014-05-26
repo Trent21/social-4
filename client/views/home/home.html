@@ -1,9 +1,8 @@
 <template name="home">
-    <div class="ui raised segment signin">
-        <label for="posttext">Update Status</label>
+    <div class="ui big input">
         <input placeholder="Whats on your mind ?" class="input-xxlarge posttext" type="text" name="posttext" value="" id="posttext">
     </div>
-    <ul id="postList" class="unstyled">
+    <ul id="postList">
         {{#each posts}}
         	{{>post}}
         {{/each}}
