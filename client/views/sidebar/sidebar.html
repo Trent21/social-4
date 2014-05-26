@@ -1,11 +1,33 @@
 <template name="sidebar">
-	<ul class="nav nav-list">
-	    <li class="nav-header">FAVORITES</li>
-	    <li><a href="/home">News Feed</a></li>
-	    <li><a href="/messages">Messages</a></li>
-		<li><a href="/events">Events</a></li>
-		<li><a href="/photos">Photos</a></li>
-		<li><a href="/browse">Browse</a></li>
-		<li><a href="/findfriends">Find Friends</a></li>
-	</ul>	
+	<div class="ui vertical menu">
+	  <a href="/home" class="active teal item">
+	    News Feed
+	    <div class="ui teal label">1</div>
+	  </a>
+	  <a href="/messages" class="item">
+	    Messages
+	    <div class="ui label">51</div>
+	  </a>
+	  <a href="/events" class="item">
+	    Events
+	    <div class="ui label">1</div>
+	  </a>
+	  <a href="/photos" class="item">
+	    Photos
+	    <div class="ui label">1</div>
+	  </a>
+	  <a href="/findfriends" class="item">
+	    Find Friends
+	    <div class="ui label">1</div>
+	  </a>
+	  <div class="item">
+	    <div class="ui small icon input">
+	      <input type="text" placeholder="Search mail...">
+	      <i class="search icon"></i>
+	    </div>
+	  </div>
+	</div>
 </template>
+
+
+
