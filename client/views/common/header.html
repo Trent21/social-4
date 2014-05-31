@@ -1,18 +1,12 @@
 <template name="header">
-{{#if currentUser}}
-		
-	{{> navigation }}
-
-{{else}}
-
-    <div class="center aligned header-wrapper">
-        <h1 class="huge center aligned ui header">
-            Social Network Boilerplate
-        </h1>
-        <div class="item">
-        	<div class="ui button">{{>loginButtons}}</div>
-        </div>        
-    </div>
-    
- {{/if}}
+    {{#if currentUser}}
+    	{{> navigation }}
+    {{else}}
+        <div class="center aligned header-wrapper">
+            <h1 class="huge center aligned ui header">
+                A Social Network Boilerplate
+            </h1>
+                {{> loginForm}}
+        </div>
+    {{/if}}
 </template>

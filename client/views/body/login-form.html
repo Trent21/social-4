@@ -37,11 +37,12 @@
             </form>
           {{else}}
             <form id='recovery-form'>
-              <input type='text' id='recovery-email' class='large wide' placeholder='Your Email Address'/>              
-              <input type='submit' class='btn btn-pink large wide' value='Send Reset Instructions' />
+              <div class="ui action input">
+                <input type='text' id='recovery-email' placeholder='Your Email Address'/> 
+                <div class="ui button" type='submit' value='Send Reset Instructions'>Submit</div>
+              </div>
             </form>
           {{/if}}
-
         </div>
       </div>
     </div>
@@ -55,21 +56,60 @@
   <div class='panel-body'>
     <div class='form-wrapper'>
       <div class='intro-form-wrapper'>
-          <a class='zocial google'>Sign in with Google</a>
-          <a class='zocial facebook'>Sign in with Facebook</a>
-          <a class='zocial twitter'>Sign in with Twitter</a>
-
-        <p class='divider'> <span> or </span> </p>
-
-        <div id='intro-login-form' class='intro-form login'>
-          <form id='login-form'>
-            <input type='email' id='login-email' class='wide large' style='margin-top: 0;' placeholder='Email'/>
-            <input type='password' id='login-password' class='large' placeholder='Password'/>
-            <input type='submit' class='btn btn-green large pull-right'  id='login-button' value='Sign in'/>
-          </form> 
-          <a href='#forgotPassword' data-toggle='modal' id='forgot-password'>Forgot password?</a>
-          <span class='divider'> | </span>
-          <a href='#' id='create-account'>Create account</a>
+        <div class="ui two column middle aligned relaxed grid basic segment">
+          <div class="column">
+            <form id='login-form'>
+              <div class="ui form segment">
+                <div class="field">
+                  <label>Email</label>
+                  <div class="ui left labeled icon input">
+                    <input type='email' id='login-email' class='wide large' style='margin-top: 0;' placeholder='Email'>
+                    <i class="user icon"></i>
+                    <div class="ui corner label">
+                      <i class="asterisk icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label>Password</label>
+                  <div class="ui left labeled icon input">
+                    <input type='password' id='login-password' class='large' placeholder='Password'>
+                    <i class="lock icon"></i>
+                    <div class="ui corner label">
+                      <i class="asterisk icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui blue submit button" type='submit' id='login-button' value='Sign in'>Login</div>
+              <div class="tiny ui buttons">
+                <div href='#forgotPassword' data-toggle='modal' id='forgot-password' class="ui button">Forgot password?</div>
+                  <div class="or"></div>
+                <div href='#' id='create-account' class="ui positive button">Create account</div>
+              </div>
+            </div>
+          </form>
+          </div>
+            <div class="ui vertical divider"> 
+              Or
+            </div>
+          <div class="center aligned column">
+            <div class=" labeled icon button">
+                  <div class="ui google button"> 
+                    <i class="google plus icon"></i>
+                    <a class=''>Sign in with Google</a>
+                  </div>
+                  <br>
+                  <div class="ui facebook button">
+                    <i class="facebook icon"></i>
+                    <a class='zocial facebook'>Sign in with Facebook</a>
+                  </div>
+                  <br>
+                  <div class="ui twitter button">
+                    <i class="twitter icon"></i>
+                    <a class='zocial twitter'>Sign in with Twitter</a>
+                  </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
