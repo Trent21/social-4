@@ -2,19 +2,12 @@
     <header>
         {{> yield region='header'}}
     </header>
-{{#if currentUser}}
-            
-    {{>sidebar}}
-    
-
-    {{>home}}
-
-
-{{else}}
-            
-    {{>yield}}  
-            
-{{/if}}
+		{{#if currentUser}}
+		    {{> sidebar}}
+		    {{> home}}
+		{{else}}
+		    {{> yield}}  
+		{{/if}}
     <footer>
         {{> yield region='footer'}}
     </footer>
