@@ -1,11 +1,25 @@
 <template name="navigation">
-	<nav class="ui menu">
-
-	     <button><h3 class="header item sidebar launch button"><i class="list layout icon"></i></h3></button>
+	<!-- <nav class="ui menu">
+	     <button><h3 class="header item sidebar launch button"><i class="list icon"></i></h3></button>
 
 		  <a class="item">Link</a>
 		  <span class="right floated text item">
 		    Signed in as <a href="#">{{>loginButtons}}</a>
 		  </span>	
-	</nav>
+	</nav> -->
+
+<div class="ui secondary pointing menu">
+  <a class="active item">
+    <i class="home icon"></i> Home
+  </a>
+  <a class="item">
+    <i class="mail icon"></i> Messages
+  </a>
+  <a class="item">
+    <i class="user icon"></i> Friends
+  </a>
+  <span class="right floated text item">
+	    Signed in as <a href="#">{{>loginButtons}}</a>
+	</span>	
+</div>
 </template>
