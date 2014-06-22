@@ -26,8 +26,8 @@
       },
       "semantic-ui": {
         "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
-        "tag": "v0.17.0",
-        "commit": "820b4a05267733aa8124ba6ebc5b88eaf93361c4"
+        "tag": "v0.18.0",
+        "commit": "a27035712167b248366a7719399a2257513530ee"
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
