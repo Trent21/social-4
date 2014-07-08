@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-', 'bower' ]
+2 info using npm@1.4.10
+3 info using node@v0.10.28
+4 verbose node symlink /usr/local/bin/node
+5 verbose cache add [ '-', null ]
+6 verbose cache add name=undefined spec="-" args=["-",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '-',
+7 verbose parsed url   path: '-',
+7 verbose parsed url   href: '-' }
+8 verbose cache add [ 'bower', null ]
+9 verbose cache add name=undefined spec="bower" args=["bower",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'bower',
+10 verbose parsed url   path: 'bower',
+10 verbose parsed url   href: 'bower' }
+11 silly lockFile 3bc15c8a- -
+12 verbose lock - /Users/sokeefe/.npm/3bc15c8a-.lock
+13 silly lockFile 206e3ce5-bower bower
+14 verbose lock bower /Users/sokeefe/.npm/206e3ce5-bower.lock
+15 silly lockFile 3bc15c8a- -
+16 silly lockFile 3bc15c8a- -
+17 silly lockFile 206e3ce5-bower bower
+18 silly lockFile 206e3ce5-bower bower
+19 verbose addNamed [ '-', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile c75fe0d4- -@
+22 verbose lock -@ /Users/sokeefe/.npm/c75fe0d4-.lock
+23 verbose addNamed [ 'bower', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile 1240aab1-bower bower@
+26 verbose lock bower@ /Users/sokeefe/.npm/1240aab1-bower.lock
+27 silly addNameRange { name: '-', range: '*', hasData: false }
+28 verbose url raw -
+29 verbose url resolving [ 'https://registry.npmjs.org/', './-' ]
+30 verbose url resolved https://registry.npmjs.org/-
+31 info trying registry request attempt 1 at 13:18:39
+32 http GET https://registry.npmjs.org/-
+33 silly addNameRange { name: 'bower', range: '*', hasData: false }
+34 verbose url raw bower
+35 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+36 verbose url resolved https://registry.npmjs.org/bower
+37 info trying registry request attempt 1 at 13:18:40
+38 http GET https://registry.npmjs.org/bower
+39 http 404 https://registry.npmjs.org/-
+40 verbose headers { date: 'Sun, 29 Jun 2014 20:18:39 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=0',
+40 verbose headers   'content-length': '52',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   age: '0',
+40 verbose headers   'x-served-by': 'cache-lax1423-LAX',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1404073118.822083,VS0,VE337',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 silly registry.get cb [ 404,
+41 silly registry.get   { date: 'Sun, 29 Jun 2014 20:18:39 GMT',
+41 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+41 silly registry.get     'content-type': 'application/json',
+41 silly registry.get     'cache-control': 'max-age=0',
+41 silly registry.get     'content-length': '52',
+41 silly registry.get     'accept-ranges': 'bytes',
+41 silly registry.get     via: '1.1 varnish',
+41 silly registry.get     age: '0',
+41 silly registry.get     'x-served-by': 'cache-lax1423-LAX',
+41 silly registry.get     'x-cache': 'MISS',
+41 silly registry.get     'x-cache-hits': '0',
+41 silly registry.get     'x-timer': 'S1404073118.822083,VS0,VE337',
+41 silly registry.get     'keep-alive': 'timeout=10, max=50',
+41 silly registry.get     connection: 'Keep-Alive' } ]
+42 silly lockFile c75fe0d4- -@
+43 silly lockFile c75fe0d4- -@
+44 error Error: not_found document not found: -
+44 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+44 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+44 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+44 error     at Request.EventEmitter.emit (events.js:98:17)
+44 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+44 error     at Request.EventEmitter.emit (events.js:117:20)
+44 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+44 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+44 error     at _stream_readable.js:919:16
+44 error     at process._tickCallback (node.js:419:13)
+45 error If you need help, you may report this *entire* log,
+45 error including the npm and node versions, at:
+45 error     <http://github.com/npm/npm/issues>
+46 error System Darwin 13.2.0
+47 error command "node" "/usr/local/bin/npm" "install" "-" "bower"
+48 error cwd /Users/sokeefe/Desktop/Github/social
+49 error node -v v0.10.28
+50 error npm -v 1.4.10
+51 verbose exit [ 1, true ]
